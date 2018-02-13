@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name"> NaoTemNada</string>
+    <string name="action_configuracao">Configuraçoes</string>
+    <string name="action_sair">Sair</string>
+    <string name="action_compatilhar">Compatilhar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

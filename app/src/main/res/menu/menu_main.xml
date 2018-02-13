@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item
+        android:id="@+id/action_configuracao"
+        android:title="@string/action_configuracao"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_compatilhar"
+        android:title="@string/action_compatilhar"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:orderInCategory="300"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_sair"
+        android:title="@string/action_sair"
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
+
+</menu>
