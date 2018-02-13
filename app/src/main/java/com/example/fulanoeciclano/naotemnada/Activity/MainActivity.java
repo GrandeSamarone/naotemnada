@@ -1,4 +1,4 @@
-package com.example.fulanoeciclano.naotemnada;
+package com.example.fulanoeciclano.naotemnada.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 
 import com.example.fulanoeciclano.naotemnada.Adapter.TabAdapter;
+import com.example.fulanoeciclano.naotemnada.R;
 import com.example.fulanoeciclano.naotemnada.fragments.ContatoFragment;
 import com.example.fulanoeciclano.naotemnada.fragments.ConversasFragment;
 import com.example.fulanoeciclano.naotemnada.fragments.SuporteFragment;
