@@ -12,10 +12,10 @@ import com.example.fulanoeciclano.naotemnada.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ConversasFragment extends Fragment {
+public class LocalizacaoFragment extends Fragment {
 
 
-    public ConversasFragment() {
+    public LocalizacaoFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class ConversasFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_conversas, container, false);
+        return inflater.inflate(R.layout.fragment_localizacao, container, false);
     }
 
 }
