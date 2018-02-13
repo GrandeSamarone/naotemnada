@@ -10,9 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.fulanoeciclano.naotemnada.Adapter.TabAdapter;
 import com.example.fulanoeciclano.naotemnada.R;
@@ -47,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+/*
         BotaoMaisWifi = (Button) findViewById(R.id.botaomaiswifi);
         BotaoMaisWifi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentaddwifi);
             }
         });
-
+*/
         //Toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("Wifi");

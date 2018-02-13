@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "193376147062",
+    "firebase_url": "https://naotemnada-24e7c.firebaseio.com",
+    "project_id": "naotemnada-24e7c",
+    "storage_bucket": "naotemnada-24e7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193376147062:android:2cde08c1f3844988",
+        "android_client_info": {
+          "package_name": "com.example.fulanoeciclano.naotemnada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193376147062-0vqco45l1d6melvnf78t8c6pipce8o4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fulanoeciclano.naotemnada",
+            "certificate_hash": "47830f9f4e8b621667ed6ac25a3cf965dbee377b"
+          }
+        },
+        {
+          "client_id": "193376147062-ehu0rmutars9s5pnt5cf99anaq4hq4u2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSC25iLoWE4EqdoblNpIg0GdjZonE9j3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193376147062-ehu0rmutars9s5pnt5cf99anaq4hq4u2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
