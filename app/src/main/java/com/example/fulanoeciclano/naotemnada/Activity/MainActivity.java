@@ -10,7 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.fulanoeciclano.naotemnada.Adapter.TabAdapter;
 import com.example.fulanoeciclano.naotemnada.R;
@@ -27,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private Toolbar toolbar;
     private Button BotaoMaisWifi;
-    private Intent intentaddwifi;
+    private Intent pagcadastrar;
+    private TextView nomedousuario;
     //icones pretos
     int[] tabIcons_black = {
             R.drawable.ic_public_black_24dp,
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        nomedousuario =findViewById(R.id.WifiLegenda);
+
 
 /*
         BotaoMaisWifi = (Button) findViewById(R.id.botaomaiswifi);
@@ -137,6 +143,18 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    //menu do toolbar
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_cadastrar:
+               pagcadastrar = new Intent(MainActivity.this,Autenticacao.class);
+               startActivity(pagcadastrar);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 

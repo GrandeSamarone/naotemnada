@@ -10,7 +10,7 @@
         app:showAsAction="never"/>
 
     <item
-        android:id="@+id/action_compatilhar"
+        android:id="@+id/action_cadastrar"
         android:title="@string/action_compatilhar"
         android:icon="@drawable/ic_person_add_black_24dp"
         android:orderInCategory="300"

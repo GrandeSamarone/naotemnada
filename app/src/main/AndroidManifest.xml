@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,21 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Activity.MainActivity">
-        </activity>
-
-        <activity android:name=".Splash.SplashScreen"
+        <activity android:name=".Activity.MainActivity"></activity>
+        <activity
+            android:name=".Splash.SplashScreen"
             android:theme="@style/AppCompat.TelaCheia">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Activity.Procurar_Wifi"></activity>
+        <activity android:name=".Activity.Procurar_Wifi" />
+        <activity
+            android:name=".Activity.Autenticacao"
+            android:label="@string/title_activity_autenticacao"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
