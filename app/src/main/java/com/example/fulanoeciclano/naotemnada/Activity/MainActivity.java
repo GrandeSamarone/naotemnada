@@ -12,9 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.fulanoeciclano.naotemnada.Adapter.TabAdapter;
+import com.example.fulanoeciclano.naotemnada.Page_Usuario.Activity_Usuario;
 import com.example.fulanoeciclano.naotemnada.R;
 import com.example.fulanoeciclano.naotemnada.RecicleView.wifiAdapterRec;
 import com.example.fulanoeciclano.naotemnada.fragments.GeralFragment;
@@ -30,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private Toolbar toolbar;
-   // private Button BotaoMaisWifi;
-    private FloatingActionButton teste;
     private Intent pagcadastrar;
     private TextView nomedousuario;
+    private Intent intentaddwifi;
+    private  FloatingActionButton fab;
 
     private FirebaseAuth mFirebaseAuth;
     //icones pretos
@@ -57,16 +59,21 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-       /*teste =  findViewById(R.id.botaomaiswifi);
-        BotaoMaisWifi.setOnClickListener(new View.OnClickListener() {
+
+               //botao + wifi
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Funcionando", Toast.LENGTH_SHORT).show();
-                intentaddwifi = new Intent(MainActivity.this,Procurar_Wifi.class);
+                intentaddwifi = new Intent(MainActivity.this, Activity_Usuario.class);
                 startActivity(intentaddwifi);
+
+               /* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+                        */
             }
         });
-*/
+
         //Toolbar
        toolbar = (Toolbar) findViewById(R.id.toolbar_principal);
         toolbar.setTitle("Wifi");
@@ -89,8 +96,6 @@ public class MainActivity extends AppCompatActivity {
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
-
-
             public void onPageSelected(int position) {
 
                 switch (position){
@@ -143,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+ //Menu
     public boolean onCreateOptionsMenu(Menu menu) {
         mFirebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mFirebaseAuth.getCurrentUser();
