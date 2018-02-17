@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_cadastrar"
+        android:title="@string/foto_perfil"
+
+        android:icon="@drawable/ic_account_circle_white_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_configuracao"
+        android:title="@string/action_perfil"
+        android:orderInCategory="200"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_sair"
+        android:title="@string/action_sair"
+        android:orderInCategory="300"
+        app:showAsAction="never"/>
 
 </menu>

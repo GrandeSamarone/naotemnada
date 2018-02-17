@@ -3,22 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
-    <item
-        android:id="@+id/action_configuracao"
-        android:title="@string/action_configuracao"
+
+
+          <item
+        android:id="@+id/action_sair"
+        android:title="@string/action_sair"
         android:orderInCategory="100"
         app:showAsAction="never"/>
 
     <item
         android:id="@+id/action_cadastrar"
-        android:title="@string/action_compatilhar"
+        android:title="@string/action_cadastrar"
         android:icon="@drawable/ic_person_add_black_24dp"
         android:orderInCategory="300"
         app:showAsAction="ifRoom"/>
-    <item
-        android:id="@+id/action_sair"
-        android:title="@string/action_sair"
-        android:orderInCategory="200"
-        app:showAsAction="never"/>
 
 </menu>

@@ -2,6 +2,7 @@ package com.example.fulanoeciclano.naotemnada.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -11,7 +12,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.fulanoeciclano.naotemnada.Adapter.TabAdapter;
@@ -20,6 +20,8 @@ import com.example.fulanoeciclano.naotemnada.RecicleView.wifiAdapterRec;
 import com.example.fulanoeciclano.naotemnada.fragments.GeralFragment;
 import com.example.fulanoeciclano.naotemnada.fragments.LocalizacaoFragment;
 import com.example.fulanoeciclano.naotemnada.fragments.MapsFragment;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,9 +30,12 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private Toolbar toolbar;
-    private Button BotaoMaisWifi;
+   // private Button BotaoMaisWifi;
+    private FloatingActionButton teste;
     private Intent pagcadastrar;
     private TextView nomedousuario;
+
+    private FirebaseAuth mFirebaseAuth;
     //icones pretos
     int[] tabIcons_black = {
             R.drawable.ic_public_black_24dp,
@@ -51,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         nomedousuario =findViewById(R.id.WifiLegenda);
 
 
-/*
-        BotaoMaisWifi = (Button) findViewById(R.id.botaomaiswifi);
+
+       /*teste =  findViewById(R.id.botaomaiswifi);
         BotaoMaisWifi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 */
         //Toolbar
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+       toolbar = (Toolbar) findViewById(R.id.toolbar_principal);
         toolbar.setTitle("Wifi");
         setSupportActionBar(toolbar);
 
@@ -140,9 +145,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu);
-        return true;
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mFirebaseAuth.getCurrentUser();
+        if (user != null) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_logado, menu);
+            return true;
+        }else{
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.menu_main, menu);
+            return true;
+        }
     }
 
     //menu do toolbar
