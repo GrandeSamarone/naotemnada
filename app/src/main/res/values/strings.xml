@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"> NaoTemNada</string>
+    <string name="app_name"> Move Wifi</string>
     <string name="action_perfil">Perfil</string>
     <string name="action_sair">Sair</string>
     <string name="action_cadastrar">Cadastrar</string>

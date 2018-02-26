@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#dfddde</color>
+    <color name="menu_usuario">#737070</color>
+    <color name="corPar">#8e8f93</color>
+    <color name="Dialog">#ffffff</color>
+    <color name="Dialogblack">#000</color>
 </resources>

@@ -2,14 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_cadastrar"
+        android:id="@+id/foto_perfil"
         android:title="@string/foto_perfil"
-
         android:icon="@drawable/ic_account_circle_white_24dp"
         android:orderInCategory="100"
         app:showAsAction="ifRoom"/>
     <item
-        android:id="@+id/action_configuracao"
+        android:id="@+id/action_perfil"
         android:title="@string/action_perfil"
         android:orderInCategory="200"
         app:showAsAction="never"/>

@@ -8,4 +8,14 @@
     tools:context="com.example.fulanoeciclano.naotemnada.Page_Usuario.Activity_Usuario"
     tools:showIn="@layout/app_bar_activity__usuario">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
