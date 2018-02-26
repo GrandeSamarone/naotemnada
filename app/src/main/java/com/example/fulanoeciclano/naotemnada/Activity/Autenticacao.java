@@ -85,7 +85,7 @@ public class Autenticacao extends AppCompatActivity {
 
     private void onSignedInInitialize(String username) {
         mUsername = username;
-        Toast.makeText(this, "bacana "+mUsername, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "oi "+mUsername, Toast.LENGTH_SHORT).show();
         //attachDatabaseReadListener();
 
     }
