@@ -2,10 +2,8 @@ package com.example.fulanoeciclano.naotemnada.Activity;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
@@ -26,9 +24,6 @@ import com.example.fulanoeciclano.naotemnada.RecicleView.wifiAdapterRec;
 import com.example.fulanoeciclano.naotemnada.fragments.GeralFragment;
 import com.example.fulanoeciclano.naotemnada.fragments.LocalizacaoFragment;
 import com.example.fulanoeciclano.naotemnada.fragments.MapsFragment;
-import com.firebase.ui.auth.AuthUI;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -75,16 +70,16 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*mFirebaseAuth = FirebaseAuth.getInstance();
+               /* mFirebaseAuth = FirebaseAuth.getInstance();
                FirebaseUser user = mFirebaseAuth.getCurrentUser();
                 if(user!=null) {
                     intentaddwifi = new Intent(MainActivity.this, Activity_Usuario.class);
                     startActivity(intentaddwifi);
-                }else{
-                */
-                    intentaddwifi = new Intent(MainActivity.this,Autenticacao.class);
-                    startActivity(intentaddwifi);
+                }else {
 
+                    intentaddwifi = new Intent(MainActivity.this, Autenticacao.class);
+                    startActivity(intentaddwifi);
+                }
                /* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
                         */
@@ -146,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void botaoexibirconfirmacao(){
-
+/*
         AlertDialog.Builder  msgbox = new AlertDialog.Builder(this);
         //configurando o titulo
         msgbox.setTitle("Sair");
@@ -181,6 +176,7 @@ public class MainActivity extends AppCompatActivity {
                            }
                 });
         msgbox.show();
+        */
 
     }
 
